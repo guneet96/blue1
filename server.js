@@ -5,7 +5,7 @@ const app = express();
 // Connect Database 
 connectDB();
 
-app.get('/', (req,res) => res.send('API Running')); 
+app.get('/', (req,res) => res.send('API Deployed on Heroku and Running')); 
 
 const PORT = process.env.PORT || 5000;
 
