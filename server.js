@@ -7,6 +7,8 @@ connectDB();
 
 app.get('/', (req,res) => res.send('API Deployed on Heroku and Running')); 
 
+// inntialize middleware
+app.use(express.json({ extended: false }));
 
 // Routes are defined here
 app.use('/api/users', require('./routes/api/users'))
