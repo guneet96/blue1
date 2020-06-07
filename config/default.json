@@ -1,4 +1,6 @@
  {
 	 "mongoURI": "mongodb+srv://blue1:blue12@blue1-nps9j.mongodb.net/test?retryWrites=true&w=majority",
-	 "jwtSecret":"sectoken"
+	 "jwtSecret":"sectoken",
+	 "githubClientId": "a8dc6306270aad05343f",
+	 "githubSecret": "7fba5c26975daa6f4b9df605ce18957fa6918e65"
  }

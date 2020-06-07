@@ -5,8 +5,8 @@ const config = require('config');
 module.exports = function (req, res, next) {
     // get the token from the header
     const token = req.header('x-auth-token');
-    console.log('working/?')
-    console.log(token);
+    // console.log('working/?')
+    // console.log(token);
 
     // check if no token
     if(!token) {
@@ -16,7 +16,7 @@ module.exports = function (req, res, next) {
     // verify the authenticy of the token
     try {
         const decoded = jwt.verify(token, config.get('jwtSecret'));
-        console.log(decoded);
+        // console.log(decoded);
         // setting the session
         req.user = decoded.user;
         next();
